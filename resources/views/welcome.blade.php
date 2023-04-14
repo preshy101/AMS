@@ -190,7 +190,7 @@
 					<div class="col-sm-7 col-md-7 col-lg-7 wow fadeInRight" data-wow-delay="3.3s">
 						<div class="quote-form">
 							<div class="hgroup">
-								<h1 class="color-1">GET A FREE QUOTE</h1>
+								<h1 class="color-1">Book appointment</h1>
 								<h2>we always use best & fastest fleets</h2>
 							</div>
 							<div class="row">
@@ -447,7 +447,7 @@
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
                         @endif
-                    @endauth 
+                    @endauth
             @endif
 							</nav>
 						</div>
