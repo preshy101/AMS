@@ -1,16 +1,4 @@
-       {{-- @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif --}}
 
 
 <!DOCTYPE html>
@@ -449,7 +437,18 @@
 	                            <a href="04_about.html">About Us</a>
 	                            <a href="07_services.html">News</a>
 	                            <a href="10_blog.html">Shop</a>
-	                            <a href="12_contact.html">Contact</a>
+
+	                              @if (Route::has('login'))
+                    @auth
+                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                    @else
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+
+                        @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        @endif
+                    @endauth 
+            @endif
 							</nav>
 						</div>
 						<div class="col-xs-6 col-sm-4 wow zoomIn" data-wow-delay="0.3s">
